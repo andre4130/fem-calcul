@@ -12,7 +12,9 @@ export default function Navigation() {
         <div>
           <Link href={'/'} className="flex items-center">
             <Image src="/femlogo.svg" height={40} width={40} alt={'logo'} className=" mr-3" />{' '}
-            <strong>Fem Calcul</strong>
+            <strong>
+              <h4>Fem Calcul</h4>
+            </strong>
           </Link>
         </div>
         <div>
