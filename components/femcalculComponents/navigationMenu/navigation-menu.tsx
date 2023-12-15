@@ -29,6 +29,9 @@ export default function Navigation() {
               <Link href={'/research'}>Research</Link>
             </NavButton>
             <NavButton>
+              <Link href={'/technical-writing'}>Technical Writing</Link>
+            </NavButton>
+            <NavButton>
               <Link href={'/about'}>About</Link>
             </NavButton>
             <NavButton>

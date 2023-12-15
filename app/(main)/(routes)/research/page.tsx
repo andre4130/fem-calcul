@@ -1,3 +1,3 @@
 export default function ResearchPage() {
-  return <div className="p-6">ResearchPage</div>;
+  return <div>ResearchPage</div>;
 }
