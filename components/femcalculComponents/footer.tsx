@@ -13,7 +13,7 @@ export default function Footer() {
             <Linkedin />
           </a>
         </div>
-        <div className="h-full justify-center align-middle">
+        <div className="h-full flex items-center justify-center">
           FEM Calcul - Structural Analysis Consulting © {currentYear}
         </div>
         <div className="h-full justify-center">
