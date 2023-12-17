@@ -1,27 +1,18 @@
-import SectionBanner from '@/components/femcalculComponents/sectionBanner/section-banner';
-import bannerConsulting from '../../../../public/images/banner-consulting.jpg';
 import Image from 'next/image';
 import SectionWrapper from '@/components/femcalculComponents/SectionWrapper/section-wrapper';
+import bannerConsulting from '../../../../public/images/banner-consulting.jpg';
+import SectionBanner from '@/components/femcalculComponents/section/components/section-banner';
+import SectionIntroText from '@/components/femcalculComponents/section/components/section-intro-text';
 
 export default function ConsultingPage() {
   return (
     <>
-      <div
-        className="flex rounded-md h-[200px] pt-[72px] bg-[url('../public/images/banner-consulting.jpg')] 
-      bg-cover bg-center bg-fixed flex-col items-center justify-between p-4"
-      >
-        <h2>Consulting</h2>
-      </div>
-      <div className="flex w-100 justify-center text-center ">
-        <div className="pt-10 flex max-w-4xl">
-          <h4>
-            Nonlinear finite element analysis has become an essential tool for solving complex civil engineering
-            problems. However, due to its high complexity, in order to achieve accurate predictions of the real
-            structural behavior, there is the need for a deep knowledge on the finite element procedures applied to the
-            different problems.
-          </h4>
-        </div>
-      </div>
+      <SectionBanner image={bannerConsulting} title="Consulting" />
+      <SectionIntroText
+        text={
+          'Nonlinear finite element analysis has become an essential tool for solving complex civil engineering problems. However, due to its high complexity, in order to achieve accurate predictions of the real structural behavior, there is the need for a deep knowledge on the finite element procedures applied to the different problems.'
+        }
+      />
       <div className="h-20"></div>
       <SectionWrapper title="Experience">
         <div className="flex w-100 justify-between ">
