@@ -9,7 +9,7 @@ export default function Home() {
         className="flex min-h-[calc(100vh-72px)] pt-[72px] bg-[url('../public/images/bridge.jpg')] opacity-70
       bg-cover bg-center bg-fixed flex-col items-center justify-between p-4"
       >
-        <div className="opacity-100 flex min-h-[70vh]">
+        <div className="flex min-h-[70vh] max-w-[1460px]">
           <HomeMainContent />
         </div>
       </main>
