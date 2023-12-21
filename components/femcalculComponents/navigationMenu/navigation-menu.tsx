@@ -4,16 +4,16 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Footer from '@/components/femcalculComponents/footer';
 import NavButton from '@/components/femcalculComponents/nav-button';
-
+import mesh from '../../../public/images/research.jpg';
 export default function Navigation() {
   return (
-    <NavigationMenu className="hidden md:flex align-middle justify-start w-100 p-4 bg-white w-full border-b-slate-500 border-b-3 b-opacity-50">
+    <NavigationMenu className="hidden md:flex align-middle justify-start w-100 p-4 bg-white w-full border-b-slate-500 border-b-3 b-opacity-50 border-b-[1px]">
       <div className="flex flex-row w-full justify-between items-center">
         <div>
           <Link href={'/'} className="flex items-center">
-            <Image src="/femlogo.svg" height={40} width={40} alt={'logo'} className=" mr-3" />{' '}
+            <Image src="/femlogo.svg" height={40} width={40} alt={'logo'} className=" mr-3" />
             <strong>
-              <h4>Fem Calcul</h4>
+              <h4 style={{ filter: `url(${mesh.src})` }}>Fem Calcul</h4>
             </strong>
           </Link>
         </div>
