@@ -32,11 +32,11 @@ export default function ResearchCard({
         <div className="text-center py-8 md:py-2 xs:text-sm md:text-2xl">{researchInfo.title}</div>
         <Dialog>
           <DialogTrigger asChild>
-            <button className="absolute bottom-[30px] right-[12px] h-1">
+            <button className="absolute bottom-[46px] right-[12px] h-1">
               <PlusCircle />
             </button>
           </DialogTrigger>
-          <DialogContent className="max-h-[100vh] overflow-y-auto">
+          <DialogContent className="max-h-[100vh] mt-4 overflow-y-auto">
             <DialogHeader>
               <DialogTitle className="mb-2 mr-5">{researchInfo.title}</DialogTitle>
               <Separator />
