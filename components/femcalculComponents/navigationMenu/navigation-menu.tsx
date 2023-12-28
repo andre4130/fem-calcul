@@ -2,10 +2,14 @@
 import { NavigationMenu, NavigationMenuList } from '@/components/ui/navigation-menu';
 import Link from 'next/link';
 import Image from 'next/image';
-import Footer from '@/components/femcalculComponents/footer';
 import NavButton from '@/components/femcalculComponents/nav-button';
 import mesh from '../../../public/images/research.jpg';
+import { usePathname } from 'next/navigation';
+
 export default function Navigation() {
+  const pathname = usePathname();
+  const underlinedPathname = 'border-b-[2px] border-b-slate-500';
+
   return (
     <NavigationMenu className="hidden md:flex align-middle justify-start w-100 p-4 bg-white w-full border-b-slate-500 border-b-3 b-opacity-50 border-b-[1px]">
       <div className="flex flex-row w-full justify-between items-center">
@@ -19,25 +23,25 @@ export default function Navigation() {
         </div>
         <div>
           <NavigationMenuList>
-            <NavButton>
+            <NavButton className={`${pathname === '/consulting' ? underlinedPathname : undefined}`}>
               <Link href={'/consulting'}>Consulting</Link>
             </NavButton>
-            <NavButton>
+            <NavButton className={`${pathname === '/education' ? underlinedPathname : undefined}`}>
               <Link href={'/education'}>Education</Link>
             </NavButton>
-            <NavButton>
+            <NavButton className={`${pathname === '/research' ? underlinedPathname : undefined}`}>
               <Link href={'/research'}>Research</Link>
             </NavButton>
-            <NavButton>
+            <NavButton className={`${pathname === '/technical-writing' ? underlinedPathname : undefined}`}>
               <Link href={'/technical-writing'}>Technical Writing</Link>
             </NavButton>
-            <NavButton>
+            <NavButton className={`${pathname === '/about' ? underlinedPathname : undefined}`}>
               <Link href={'/about'}>About</Link>
             </NavButton>
-            <NavButton>
+            <NavButton className={`${pathname === '/contact' ? underlinedPathname : undefined}`}>
               <Link href={'/contact'}>Contact</Link>
             </NavButton>
-            <NavButton>
+            <NavButton className={`${pathname === '/cv' ? underlinedPathname : undefined}`}>
               <Link href={'/cv'}>CV</Link>
             </NavButton>
           </NavigationMenuList>
