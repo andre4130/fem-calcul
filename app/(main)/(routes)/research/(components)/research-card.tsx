@@ -6,6 +6,7 @@ import {
   DialogContent,
   DialogDescription,
   DialogHeader,
+  DialogOverlay,
   DialogTitle,
   DialogTrigger,
 } from '@/components/ui/dialog';
@@ -28,14 +29,14 @@ export default function ResearchCard({
   return (
     <>
       <Card className="p-4 flex flex-col justify-center align-middle relative hover:bg-slate-100 transition-all ease-in md:h-[300px] max-h-[300px]">
-        <div className="text-center xs:text-sm md:text-2xl">{researchInfo.title}</div>
+        <div className="text-center py-8 md:py-2 xs:text-sm md:text-2xl">{researchInfo.title}</div>
         <Dialog>
           <DialogTrigger asChild>
             <button className="absolute bottom-[30px] right-[12px] h-1">
               <PlusCircle />
             </button>
           </DialogTrigger>
-          <DialogContent>
+          <DialogContent className="max-h-[100vh] overflow-y-auto">
             <DialogHeader>
               <DialogTitle className="mb-2 mr-5">{researchInfo.title}</DialogTitle>
               <Separator />
