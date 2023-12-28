@@ -5,7 +5,7 @@ export default function CardComponent({ title, linkTo, img }: { title: string; l
   return (
     <Link href={linkTo}>
       <Card
-        className={`w-1/3 flex flex-col justify-center p-8 mx-1 my-5 md:mx-5 h-[${cardSize.height}] max-w-[${cardSize.width}] rounded-lg bg-[#617bc6] items-center hover:scale-95 transition-transform bg-[url(../../../public/images/consulting.jpg')] opacity-70
+        className={`w-1/3 flex flex-col justify-center p-8 px-12 md:px-0 mx-1 my-5 md:mx-5 h-[${cardSize.height}] max-w-[${cardSize.width}] rounded-lg bg-[#617bc6] items-center hover:scale-95 transition-transform bg-[url(../../../public/images/consulting.jpg')] opacity-70
       bg-cover bg-center bg-fixed`}
         style={{
           backgroundImage: `url(${img.src})`,

@@ -5,12 +5,24 @@ import SectionWrapper from '@/components/femcalculComponents/SectionWrapper/sect
 export default function EducationPage() {
   return (
     <>
-      <SectionBanner image={education} title="Education" style={{ backgroundPosition: 'center' }} />
+      <SectionBanner image={education} title="Education" titleStyle={{ color: '#FFF' }} />
       <SectionIntroText
         text={
-          'FEM Calcul has more than 10 years of experience on finite element educational to both professional and academic sectors. FEM Calcul offers courses of finite element analysis from beginners, to intermediate and advanced levels. These courses are designed to equip students with knowledge on the background of the finite element method in order to apply it with confidence and critical thinking to real engineering problems.'
+          <>
+            <p>
+              FEM Calcul has more than 10 years of experience on finite element educational to both professional and
+              academic sectors.
+            </p>
+            <br />
+            <p>
+              FEM Calcul offers courses of finite element analysis from beginners, to intermediate and advanced levels.
+              These courses are designed to equip students with knowledge on the background of the finite element method
+              in order to apply it with confidence and critical thinking to real engineering problems
+            </p>
+          </>
         }
       />
+
       <SectionWrapper title="Education Services">
         <div className="flex w-100 justify-between ">
           <div className="max-w-100 md:max-w-[50%]">

@@ -7,10 +7,21 @@ import SectionIntroText from '@/components/femcalculComponents/section/component
 export default function ConsultingPage() {
   return (
     <>
-      <SectionBanner image={bannerConsulting} title="Consulting" style={{ backgroundPosition: 'center' }} />
+      <SectionBanner image={bannerConsulting} title="Consulting" />
       <SectionIntroText
         text={
-          'Nonlinear finite element analysis has become an essential tool for solving complex civil engineering problems. However, due to its high complexity, in order to achieve accurate predictions of the real structural behavior, there is the need for a deep knowledge on the finite element procedures applied to the different problems.'
+          <>
+            <p>
+              Nonlinear finite element analysis has become an essential tool for solving complex civil engineering
+              problems.
+            </p>
+            <br />
+            <p>
+              However, due to its high complexity, in order to achieve accurate predictions of the real structural
+              behavior, there is the need for a deep knowledge on the finite element procedures applied to the different
+              problems.
+            </p>
+          </>
         }
       />
       <SectionWrapper title="Experience">

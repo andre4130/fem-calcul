@@ -14,9 +14,11 @@ export default function SectionBanner({ image, title, style, titleStyle }: Secti
   return (
     <div
       style={{ ...style, backgroundImage: `url(${image.src})` }}
-      className={`flex rounded-md max-w-100 h-[200px] pt-[72px] bg-cover bg-center bg-fixed flex-col items-center justify-between p-4`}
+      className={`flex rounded-md max-w-100 h-[200px] pt-[72px] bg-auto md:bg-cover bg-center flex-col items-center justify-between p-4`}
     >
-      <h1 style={{ ...titleStyle }}>{title}</h1>
+      <div className="text-3xl md:text-5xl" style={{ ...titleStyle }}>
+        {title}
+      </div>
     </div>
   );
 }

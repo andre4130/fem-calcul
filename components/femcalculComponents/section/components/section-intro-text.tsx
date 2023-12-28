@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { HtmlHTMLAttributes } from 'react';
 
 interface SectionIntroTextProps {
-  text: string;
+  text: string | React.ReactNode;
 }
 
 export default function SectionIntroText({ text }: SectionIntroTextProps) {
