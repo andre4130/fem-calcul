@@ -6,7 +6,7 @@ import ShortcutSection from '@/components/femcalculComponents/shortcutSection/sh
 
 export default function ServicesOffered() {
   return (
-    <ShortcutSection title="Services Offered">
+    <ShortcutSection title="Services Offered" mainDivClassName="pt-4x">
       <>
         <CardComponent title={'Consulting'} linkTo={'/consulting'} img={consulting} />
         <CardComponent title={'Education'} linkTo={'/education'} img={education} />

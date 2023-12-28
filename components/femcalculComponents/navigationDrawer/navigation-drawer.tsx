@@ -17,7 +17,7 @@ import { NavigationMenu, NavigationMenuList } from '@/components/ui/navigation-m
 
 export default function NavigationDrawer() {
   return (
-    <div className="md:hidden p-6 fixed flex w-full bg-[#fff] z-[1]">
+    <div className="md:hidden p-6 fixed flex w-full bg-[#fff] z-[1] border-b-[2px]">
       <Sheet>
         <SheetTrigger className="w-full">
           <div className="flex flex-row w-full justify-between">

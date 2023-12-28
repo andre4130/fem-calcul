@@ -1,13 +1,4 @@
-export interface PublicFundingResearchProps {
-  title: string;
-  client: string;
-  researchPeriod: string;
-  fundedBy: string;
-  position: string;
-  participants: string[];
-  goalsAndTasks?: string;
-  developedAt?: string;
-}
+import { PublicFundingResearchProps } from '../(types)/ResearchProps';
 
 export const PublicFundingResearch: PublicFundingResearchProps[] = [
   {

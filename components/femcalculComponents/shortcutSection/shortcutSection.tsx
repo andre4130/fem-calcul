@@ -9,7 +9,7 @@ interface ShortcutSectionProps {
 export default function ShortcutSection({ title, mainDivClassName, children }: ShortcutSectionProps) {
   return (
     <div className={mainDivClassName}>
-      <h4 className={`pl-6 py-12 text-center`}>
+      <h4 className={`py-6 md:py-10 text-center`}>
         <strong>{title}</strong>
       </h4>
       <div className="w-full min-h-40 flex justify-center p-4 pb-10">

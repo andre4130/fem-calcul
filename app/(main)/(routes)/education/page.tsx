@@ -13,13 +13,13 @@ export default function EducationPage() {
       />
       <SectionWrapper title="Education Services">
         <div className="flex w-100 justify-between ">
-          <div className="max-w-[50%]">
-            <h5>
+          <div className="max-w-100 md:max-w-[50%]">
+            <div className="text-lg md:text-2xl">
               FEM Calcul offers courses to individual persons, groups from commercial companies, universities or
               research organizations. The courses are designed to suit the needs of each client and focus on their areas
               of interest. Popular topics of the FEM Calcul courses are:
-            </h5>
-            <div className="text-md sm:ml-10 pt-4">
+            </div>
+            <div className="text-sm md:text-lg :ml-10 pt-4">
               <ul className={'list-disc list-inside'}>
                 <li>Introduction to finite element analysis</li>
                 <li>Nonlinear finite element analysis</li>
@@ -32,9 +32,6 @@ export default function EducationPage() {
                 <li>Interpretation of finite element results</li>
               </ul>
             </div>
-          </div>
-          <div className="max-w-50">
-            {/* <Image src={'/images/FEM-beam.jpg'} height={500} width={500} alt={'beam'} /> */}
           </div>
         </div>
       </SectionWrapper>
