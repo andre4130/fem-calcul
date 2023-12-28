@@ -10,7 +10,7 @@ interface SectionWrapperProps {
 
 export default function SectionWrapper({ title, boxClassNames, titleClassNames, children }: SectionWrapperProps) {
   return (
-    <div className="mx-4 py-[40px]">
+    <div className="py-4 md:py-[40px]">
       <SectionTitle title={title} boxClassNames={boxClassNames} titleClassNames={titleClassNames} />
       {children}
     </div>

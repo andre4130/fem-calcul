@@ -7,21 +7,20 @@ import SectionIntroText from '@/components/femcalculComponents/section/component
 export default function ConsultingPage() {
   return (
     <>
-      <SectionBanner image={bannerConsulting} title="Consulting" />
+      <SectionBanner image={bannerConsulting} title="Consulting" style={{ backgroundPosition: 'center' }} />
       <SectionIntroText
         text={
           'Nonlinear finite element analysis has become an essential tool for solving complex civil engineering problems. However, due to its high complexity, in order to achieve accurate predictions of the real structural behavior, there is the need for a deep knowledge on the finite element procedures applied to the different problems.'
         }
       />
-      <div className="h-20"></div>
       <SectionWrapper title="Experience">
         <div className="flex w-100 justify-between ">
-          <div className="max-w-[50%]">
-            <h5>
+          <div className="max-w-100 md:max-w-[50%]">
+            <div className="text-lg md:text-2xl">
               FEM Calcul has decades of experience on nonlinear finite element analysis of complex structural
               engineering problems applied to different sectors:
-            </h5>
-            <div className="text-md sm:ml-10 pt-4">
+            </div>
+            <div className="text-sm md:text-lg sm:ml-10 pt-4">
               <ul className={'list-disc list-inside'}>
                 <li>
                   Bridge analysis: concrete cracking, force redistribution, metal and concrete creep, shrinkage, dynamic
@@ -42,19 +41,21 @@ export default function ConsultingPage() {
               </ul>
             </div>
           </div>
-          <div className="max-w-50">
+          <div className="hidden md:max-w-50 md:block">
             <Image src={'/images/FEM-beam.jpg'} height={500} width={500} alt={'beam'} />
           </div>
         </div>
       </SectionWrapper>
-      <SectionWrapper title="Consulting Works" boxClassNames="justify-end">
+      <SectionWrapper title="Consulting Works" boxClassNames="md:justify-end">
         <div className="flex w-100 justify-between">
-          <div className="max-w-50">
+          <div className="hidden md:block md:max-w-50">
             <Image src={'/images/FEM-beam.jpg'} height={500} width={500} alt={'beam'} />
           </div>
-          <div className="max-w-[40%]">
-            <h5>FEM Calcul offers the following consulting works in the ambit of nonlinear finite element analysis:</h5>
-            <div className="text-md sm:ml-10 pt-4">
+          <div className="md:max-w-[40%]">
+            <div className="text-lg md:text-2xl">
+              FEM Calcul offers the following consulting works in the ambit of nonlinear finite element analysis:
+            </div>
+            <div className="text-sm md:text-lg sm:ml-10 pt-4">
               <ul className={'list-disc list-inside'}>
                 <li>Modelling of structural problems</li>
                 <li>Review of models</li>

@@ -4,6 +4,7 @@ import research from '../../../../public/images/research.jpg';
 import SectionWrapper from '@/components/femcalculComponents/SectionWrapper/section-wrapper';
 import { PublicFundingResearch } from './(config)/publicFundingResearch';
 import ResearchCard from './(components)/research-card';
+import { privateResearch } from './(config)/privateResearch';
 
 export default function ResearchPage() {
   return (
@@ -20,8 +21,15 @@ export default function ResearchPage() {
         }
       />
       <SectionWrapper title={'Research with Public Funding'}>
-        <div className=" grid grid-rows-2 grid-flow-col gap-6">
+        <div className="grid  grid-flow-col gap-6 grid-cols-1 grid-rows-5 md:grid-cols-3 md:grid-rows-2">
           {PublicFundingResearch.map((research) => (
+            <ResearchCard researchInfo={research} />
+          ))}
+        </div>
+      </SectionWrapper>
+      <SectionWrapper title={'Participation in contracts for research, consultancy & development'}>
+        <div className="grid  grid-flow-col gap-6 grid-cols-1 grid-rows-5 md:grid-cols-3 md:grid-rows-2">
+          {privateResearch.map((research) => (
             <ResearchCard researchInfo={research} />
           ))}
         </div>

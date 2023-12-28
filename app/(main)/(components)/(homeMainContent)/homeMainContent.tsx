@@ -1,17 +1,17 @@
 export default function HomeMainContent() {
   return (
-    <div className="flex flex-col justify-between px-5">
-      <div className={`animate-moveAndFade duration-1000  flex justify-end text-right`}>
-        <h4 className="w-[50%]">
+    <div className="flex flex-col justify-between px-5 md:pt-12">
+      <div className={`animate-moveAndFade duration-1000 flex justify-end text-justify md:text-right`}>
+        <div className="w-100 md:w-[50%] text-2xl md:text-4xl">
           FEM Calcul is an engineering consultancy built on decades of experience on computer-aided structural analysis
           covering a broad range of engineering challenges.
-        </h4>
+        </div>
       </div>
-      <div className={`max-w-2xl animate-moveAndFade duration-1000 `}>
-        <h4>
+      <div className={`max-w-2xl animate-moveAndFade duration-1000 mt-8 mb-3 md:py-0 text-justify md:text-left`}>
+        <div className="text-2xl md:text-4xl">
           It is a company that offers services related with advanced nonlinear finite element analysis of civil
           engineering structures in different sectors such as, bridges, tunnels, energy, historical buildings, etc.
-        </h4>
+        </div>
       </div>
     </div>
   );
