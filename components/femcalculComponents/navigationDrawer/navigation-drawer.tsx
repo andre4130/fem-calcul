@@ -61,6 +61,11 @@ export default function NavigationDrawer() {
                 </NavButton>
                 <NavButton>
                   <SheetClose asChild>
+                    <Link href={'/technical-writing'}>Technical Writing</Link>
+                  </SheetClose>
+                </NavButton>
+                <NavButton>
+                  <SheetClose asChild>
                     <Link href={'/about'}>About</Link>
                   </SheetClose>
                 </NavButton>
