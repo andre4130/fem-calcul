@@ -8,10 +8,10 @@ import { usePathname } from 'next/navigation';
 
 export default function Navigation() {
   const pathname = usePathname();
-  const underlinedPathname = 'border-b-[2px] border-b-slate-500';
+  const underlinedPathname = 'border-b-[2px] border-b-slate-500 transition-all ease-in-out';
 
   return (
-    <NavigationMenu className="hidden md:flex align-middle justify-start w-100 p-4 bg-white w-full border-b-slate-500 border-b-3 b-opacity-50 border-b-[1px]">
+    <NavigationMenu className="hidden md:flex align-middle justify-start w-100  p-4 bg-white w-full border-b-slate-500 border-b-3 b-opacity-50 border-b-[1px]">
       <div className="flex flex-row w-full justify-between items-center">
         <div>
           <Link href={'/'} className="flex items-center">
