@@ -6,7 +6,7 @@ export const PublicFundingResearch: PublicFundingResearchProps[] = [
     client: 'Dutch Ministry of Infrastructure and the Environment and Delft University of Technology (TU Delft)',
     researchPeriod: 'From October 2014 to June 2015.',
     fundedBy: 'Ministry of Infrastructure and the Environment of The Netherlands, Rijkswaterstaat (RWS)',
-    developedAt: 'TU Delft with participation of TNO DIANA BV',
+    developedAt: 'TU Delft with participation of DIANA FEA BV',
     position: 'Researcher',
     participants: ['Prof. Max Hendriks', 'Prof. Jan Rots', 'Dr. Ane de Boer'],
     goalsAndTasks:

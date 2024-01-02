@@ -24,8 +24,8 @@ export default function TechnicalWritingPage() {
             </p>
             <br />
             <p>
-              We have also decades of experience on technical writing of manuals and tutorials, so we can help your
-              institution with documenting technical procedures in the ambit of the structural finite element analysis.
+              We are also experienced on technical writing of manuals and tutorials, so we can help your institution
+              with documenting technical procedures in the ambit of the structural finite element analysis.
             </p>
           </>
         }
