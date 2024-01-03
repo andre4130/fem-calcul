@@ -3,6 +3,7 @@ import SectionWrapper from '@/components/femcalculComponents/SectionWrapper/sect
 import bannerConsulting from '../../../../public/images/banner-consulting.jpg';
 import SectionBanner from '@/components/femcalculComponents/section/components/section-banner';
 import SectionIntroText from '@/components/femcalculComponents/section/components/section-intro-text';
+import { ItemList } from './(components)/item-list';
 
 export default function ConsultingPage() {
   return (

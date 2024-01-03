@@ -1,8 +1,9 @@
-import { Noto_Sans, Rubik_80s_Fade } from 'next/font/google';
+import { Noto_Sans, Rubik_80s_Fade, Lato, Poppins, Inter } from 'next/font/google';
 import './globals.css';
 import { Metadata } from 'next';
 
-const inter = Noto_Sans({ weight: ['100', '400', '700'], subsets: ['latin'] });
+const inter = Inter({ weight: ['100', '400', '700'], subsets: ['latin'] });
+// const inter = Noto_Sans({ weight: ['100', '400', '700'], subsets: ['latin'] });
 // const inter = Rubik_80s_Fade({ weight: '400', subsets: ['latin'] });
 
 export const metadata: Metadata = {
