@@ -9,12 +9,7 @@ import { privateResearch } from './(config)/privateResearch';
 export default function ResearchPage() {
   return (
     <>
-      <SectionBanner
-        image={research}
-        title="Research"
-        style={{ backgroundPosition: 'center' }}
-        titleStyle={{ color: 'white' }}
-      />
+      <SectionBanner image={research} title="Research" style={{ backgroundPosition: 'center' }} />
       <SectionIntroText
         text={
           'FEM Calcul is built on decades of research on computational methods applied to structural civil engineering.'

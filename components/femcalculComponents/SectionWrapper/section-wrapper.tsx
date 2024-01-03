@@ -12,7 +12,7 @@ export default function SectionWrapper({ title, boxClassNames, titleClassNames, 
   return (
     <div className="py-4 md:py-[40px]">
       <SectionTitle title={title} boxClassNames={boxClassNames} titleClassNames={titleClassNames} />
-      {children}
+      <div className="text-text-secondary text-justify">{children}</div>
     </div>
   );
 }

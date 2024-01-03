@@ -5,7 +5,7 @@ import SectionWrapper from '@/components/femcalculComponents/SectionWrapper/sect
 export default function EducationPage() {
   return (
     <>
-      <SectionBanner image={education} title="Education" titleStyle={{ color: '#FFF' }} />
+      <SectionBanner image={education} title="Education" />
       <SectionIntroText
         text={
           <>

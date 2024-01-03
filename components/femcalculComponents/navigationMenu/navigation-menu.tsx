@@ -8,7 +8,7 @@ import { usePathname } from 'next/navigation';
 
 export default function Navigation() {
   const pathname = usePathname();
-  const underlinedPathname = 'border-b-[2px] border-b-slate-500 transition-all ease-in-out';
+  const underlinedPathname = 'border-b-[2px] border-b-primary-light transition-all ease-in-out';
 
   return (
     <NavigationMenu className="hidden md:flex align-middle justify-start w-100  p-4 bg-white w-full border-b-slate-500 border-b-3 b-opacity-50 border-b-[1px]">
@@ -17,7 +17,9 @@ export default function Navigation() {
           <Link href={'/'} className="flex items-center">
             <Image src="/femlogo.svg" height={40} width={40} alt={'logo'} className=" mr-3" />
             <strong>
-              <h4 style={{ filter: `url(${mesh.src})` }}>Fem Calcul</h4>
+              <h4 className="text-primary" style={{ filter: `url(${mesh.src})` }}>
+                Fem Calcul
+              </h4>
             </strong>
           </Link>
         </div>
