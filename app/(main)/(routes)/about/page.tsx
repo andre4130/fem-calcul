@@ -9,7 +9,7 @@ export default function AboutPage() {
   return (
     <>
       <div className="flex justify-center pt-8">
-        <Image src={denise} alt={'denise_ferreira'} height={370} width={370} />
+        <Image src={denise} alt={'denise_ferreira'} height={370} width={370} className="rounded-2xl" />
       </div>
 
       <>
