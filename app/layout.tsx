@@ -1,28 +1,19 @@
-import { Noto_Sans, Rubik_80s_Fade, Lato, Poppins, Inter } from 'next/font/google';
+'use client';
+
 import './globals.css';
+import { Toaster } from '@/components/ui/sonner';
 import { Metadata } from 'next';
+import { Roboto } from 'next/font/google';
 
-const inter = Inter({ weight: ['100', '400', '700'], subsets: ['latin'] });
-// const inter = Noto_Sans({ weight: ['100', '400', '700'], subsets: ['latin'] });
-// const inter = Rubik_80s_Fade({ weight: '400', subsets: ['latin'] });
-
-export const metadata: Metadata = {
-  title: 'Fem Calcul',
-  description: 'Fem Calcul - Your Finite Element Method outsourcing service',
-  icons: {
-    icon: [
-      {
-        url: '/femlogo.svg',
-        href: '/femlogo.svg',
-      },
-    ],
-  },
-};
+const inter = Roboto({ weight: ['100', '400', '700'], subsets: ['latin'] });
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Toaster />
+        <main>{children}</main>
+      </body>
     </html>
   );
 }
