@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import Footer from '@/components/femcalculComponents/footer';
+import Footer from '@/components/femcalculComponents/footer/footer';
 import NavigationDrawer from '@/components/femcalculComponents/navigationDrawer/navigation-drawer';
 import Navigation from '@/components/femcalculComponents/navigationMenu/navigation-menu';
 
