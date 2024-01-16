@@ -1,5 +1,4 @@
 import { PublicFundingResearchProps } from '../(types)/ResearchProps';
-import deterioration from '../../../../../public/images/private2.png';
 
 export const PublicFundingResearch: PublicFundingResearchProps[] = [
   {
@@ -15,7 +14,6 @@ export const PublicFundingResearch: PublicFundingResearchProps[] = [
       'This project aims at the development and implementation of layered models for relatively rapid and robust finite element analysis of concrete structures, and to sharpen the existing Dutch Guidelines for Nonlinear Finite Element Analysis of Concrete Structures.',
   },
   {
-    backgroundImage: deterioration,
     shortTitle: 'Deterioration, repair and retrofit of structures',
     title:
       'Performance-based-design of partially prestressed concrete structures. Proposal of new design methodology, experimental verification and design criteria',
