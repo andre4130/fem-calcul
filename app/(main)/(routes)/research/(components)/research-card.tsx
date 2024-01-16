@@ -6,19 +6,24 @@ import {
   DialogContent,
   DialogDescription,
   DialogHeader,
-  DialogOverlay,
   DialogTitle,
   DialogTrigger,
 } from '@/components/ui/dialog';
 import { PlusCircle } from 'lucide-react';
 import { Separator } from '@/components/ui/separator';
 import { PrivateResearchProps, PublicFundingResearchProps } from '../(types)/ResearchProps';
+import Image from 'next/image';
 
 export default function ResearchCard({
   researchInfo,
 }: {
   researchInfo: PublicFundingResearchProps | PrivateResearchProps;
 }) {
+  const cardSize = {
+    height: '300px',
+    width: '300px',
+  };
+
   const ResearchDialogDataRow = ({ title, value }: { title: string; value: string | number }) => (
     <div className="flex w-100 my-2">
       <h6 className=" font-semibold whitespace-nowrap min-w-[120px]">{title}</h6>
@@ -28,8 +33,14 @@ export default function ResearchCard({
 
   return (
     <>
-      <Card className="p-4 flex flex-col justify-center align-middle relative hover:bg-slate-100 transition-all ease-in md:h-[300px] max-h-[300px]">
-        <div className="text-center py-8 md:py-2 xs:text-sm md:text-2xl">{researchInfo.title}</div>
+      <Card
+        className="p-4 flex flex-col justify-center align-middle relative hover:bg-slate-100 transition-all ease-in md:h-[300px] max-h-[300px] bg-cover bg-center bg-fixed"
+        style={{
+          backgroundImage: `url(${researchInfo.backgroundImage})`, // fix this
+          scale: 1,
+        }}
+      >
+        <div className="text-center py-8 md:py-2 xs:text-sm md:text-2xl">{researchInfo.shortTitle}</div>
         <Dialog>
           <DialogTrigger asChild>
             <button className="absolute bottom-[46px] right-[12px] h-1">

@@ -1,4 +1,6 @@
 export interface PrivateResearchProps {
+  shortTitle: string;
+  backgroundImage?: ImageData;
   title: string;
   client: string;
   researchPeriod: string;

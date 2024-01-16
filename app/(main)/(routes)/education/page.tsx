@@ -2,7 +2,23 @@ import SectionBanner from '@/components/femcalculComponents/section/components/s
 import education from '../../../../public/images/education.jpg';
 import SectionIntroText from '@/components/femcalculComponents/section/components/section-intro-text';
 import SectionWrapper from '@/components/femcalculComponents/SectionWrapper/section-wrapper';
+import Image from 'next/image';
+import ListElement from '@/components/femcalculComponents/listElement/list-element';
+import { GraduationCap } from 'lucide-react';
+
 export default function EducationPage() {
+  const educationList = [
+    'Introduction to finite element analysis',
+    'Nonlinear finite element analysis',
+    'Parametrization of models and analysis automation',
+    'Discrete and smeared cracking simulation in concrete structures',
+    'Early age concrete cracking',
+    'Meso and macro modelling of masonry structures',
+    'Discrete and embedded reinforcement',
+    'Numerical stability of nonlinear finite element analysis',
+    'Interpretation of finite element results',
+  ];
+
   return (
     <>
       <SectionBanner image={education} title="Education" />
@@ -31,19 +47,16 @@ export default function EducationPage() {
               research organizations. The courses are designed to suit the needs of each client and focus on their areas
               of interest. Popular topics of the FEM Calcul courses are:
             </div>
-            <div className="text-sm md:text-lg :ml-10 pt-4">
-              <ul className={'list-disc list-inside'}>
-                <li>Introduction to finite element analysis</li>
-                <li>Nonlinear finite element analysis</li>
-                <li>Parametrization of models and analysis automation</li>
-                <li>Discrete and smeared cracking simulation in concrete structures</li>
-                <li>Early age concrete cracking</li>
-                <li>Meso and macro modelling of masonry structures</li>
-                <li>Discrete and embedded reinforcement</li>
-                <li>Numerical stability of nonlinear finite element analysis</li>
-                <li>Interpretation of finite element results</li>
+            <div className="text-sm md:text-lg :ml-6 pt-4">
+              <ul className={'list-inside'}>
+                {educationList.map((element) => (
+                  <ListElement icon={<GraduationCap height={'22px'} width={'22px'} />} text={<>{element}</>} />
+                ))}
               </ul>
             </div>
+          </div>
+          <div className="hidden md:max-w-50 md:block">
+            <Image src={'/images/education-students.jpg'} height={600} width={600} alt={'education'} />
           </div>
         </div>
       </SectionWrapper>

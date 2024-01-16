@@ -2,6 +2,7 @@ import { PrivateResearchProps } from '../(types)/ResearchProps';
 
 export const privateResearch: PrivateResearchProps[] = [
   {
+    shortTitle: 'Structural research and advice for Catalan Administration of Infrastructure',
     title:
       'Support for research and advice on structural issues on infrastructure managed by the Catalan Administration of Infrastructure.',
     client: 'Infraestructures de la Generalitat de Catalunya, SAU (Infraestructures.cat)',
