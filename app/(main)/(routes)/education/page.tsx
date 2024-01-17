@@ -49,8 +49,8 @@ export default function EducationPage() {
             </div>
             <div className="text-sm md:text-lg :ml-6 pt-4">
               <ul className={'list-inside'}>
-                {educationList.map((element) => (
-                  <ListElement icon={<GraduationCap height={'22px'} width={'22px'} />} text={<>{element}</>} />
+                {educationList.map((element, i) => (
+                  <ListElement key={i} icon={<GraduationCap height={'22px'} width={'22px'} />} text={<>{element}</>} />
                 ))}
               </ul>
             </div>

@@ -8,13 +8,14 @@ interface SectionBannerProps {
   title: string;
   style?: CSSProperties;
   titleStyle?: CSSProperties;
+  divClassName?: string;
 }
 
-export default function SectionBanner({ image, title, style, titleStyle }: SectionBannerProps) {
+export default function SectionBanner({ image, title, style, titleStyle, divClassName }: SectionBannerProps) {
   return (
     <div
       style={{ ...style, backgroundImage: `url(${image.src})` }}
-      className={`flex rounded-md max-w-100 opacity-80 h-[200px] pt-[60px] bg-auto md:bg-cover bg-center flex-col items-center justify-between p-4`}
+      className={`flex rounded-md max-w-100 opacity-80 h-[200px] pt-[60px] mt-7 bg-auto md:bg-cover bg-center flex-col items-center justify-between p-4 ${divClassName}`}
     >
       <div className="text-3xl md:text-5xl p-4 rounded-lg bg-white opacity-90 text-primary" style={{ ...titleStyle }}>
         <strong>{title}</strong>

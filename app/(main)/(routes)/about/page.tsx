@@ -1,4 +1,3 @@
-import SectionIntroText from '@/components/femcalculComponents/section/components/section-intro-text';
 import Image from 'next/image';
 import denise from '../../../../public/images/denise.jpg';
 import SectionWrapper from '@/components/femcalculComponents/SectionWrapper/section-wrapper';
@@ -15,39 +14,39 @@ export default function AboutPage() {
       <>
         <div className="w-100 flex justify-center pt-10">
           <p className=" max-w-2xl text-text-primary font-normal text-justify align-middle  italic text-2xl">
-            <strong>FEM CALCUL</strong> brings together decades of experience in both academia and industry in the ambit
-            of complex nonlinear finite element analysis applied to numerous and diverse engineering problems. FEM
-            Calcul aims to help engineers on achieving more accurate and efficient simulations of complex problems, that
-            result in safer, more economical and overall optimized civil infrastructure.
+            "<strong>FEM CALCUL</strong> brings together decades of experience in both academia and industry in the
+            ambit of complex nonlinear finite element analysis, to help engineers achieving accurate and efficient
+            simulations of complex structural problems."
           </p>
         </div>
         <SectionWrapper title={'Academic career'}>
           <SectionMainTextFormatter>
             <>
-              <strong>Dr. Denise Ferreira</strong>, the founder and CEO of FEM Calcul, obtained her MSc in Structural
-              Engineering from University of Porto, Portugal (2009) and her <strong>PhD</strong> from Polytechnic
-              University of Catalonia, Barcelona (2013). She worked as a university lecturer and academic researcher
-              being involved in several projects focused on the analysis of concrete structures, covering both numerical
-              and experimental fields. She has worked as a researcher in <strong>Universidade do Porto</strong>,
-              Universitat Politècnica de Catalunya (UPC) and TU Delft.
+              <strong>Dr. Denise Ferreira</strong>, the founder and CEO of FEM Calcul, obtained her <strong>MSc</strong>{' '}
+              in Civil Structural Engineering from Universidade do Porto (FEUP), Portugal (2009) and her{' '}
+              <strong>PhD</strong> from Universitat Politècnica de Catalunya (UPC), Barcelona (2013). She worked as a
+              university lecturer and researcher being involved in several projects focused on the analysis of concrete
+              structures, covering both numerical and experimental fields. She has worked as a researcher in
+              Universidade do Porto, Universitat Politècnica de Catalunya and Delft University of Technology
             </>
           </SectionMainTextFormatter>
         </SectionWrapper>
         <SectionWrapper title={'Professional career'}>
           <SectionMainTextFormatter>
             <>
-              She has worked at DIANA FEA BV, in The Netherlands, since 2016 taken different roles: a kernel developer,
-              documentation curator for the DIANA developments ,training tutor, client support engineer and product
+              She has worked at DIANA FEA BV, in The Netherlands, since 2016 taken different roles: kernel developer,
+              documentation curator for the DIANA developments, training tutor, client support engineer and product
               specialist. She is a DIANA Expert and, with FEM Calcul, she continues her collaborating with DIANA FEA BV
-              with the tasks of technical writing, training, costumer support and product development.
+              with the roles of product development specialist, technical editor, training tutor and costumer support.
             </>
           </SectionMainTextFormatter>
         </SectionWrapper>
         <SectionWrapper title={'Our mission'}>
           <SectionMainTextFormatter>
             <>
-              At FEM Calcul we are committed to high standards, to delivering high quality work and always finding the
-              best solutions for the most complex engineering problems.
+              At <strong>FEM Calcul</strong> we are committed to high standards, to delivering high quality work and
+              always finding the best solutions for the most complex engineering problems. Our final goal is to help
+              structural engineers achieving safer, more economical and overall optimized civil infrastructure.
             </>
           </SectionMainTextFormatter>
         </SectionWrapper>
@@ -59,7 +58,7 @@ export default function AboutPage() {
               text={
                 <>
                   <strong>FEM</strong>, of course, is the acronym of <strong>FINITE ELEMENT METHOD</strong>. We are
-                  truly experts on using the finite element method to optimize engineering structural solutions.
+                  experts on using the finite element method to optimize engineering structural solutions.
                 </>
               }
             />
@@ -67,11 +66,8 @@ export default function AboutPage() {
               icon={<PencilRuler width={'44px'} height={'44px'} />}
               text={
                 <>
-                  <strong>FEM</strong> is the verb <strong>TO DO</strong> in Catalan language. FEM Calcul is based in
-                  the hearth of Barcelona, Catalunya. We praise ourselves to be <strong>DOERS</strong>. There is no
-                  challenge that we cannot handle, we truly get things done. <strong>FEM</strong>, of course, is the
-                  acronym of <strong>FINITE ELEMENT METHOD</strong>. We are truly experts on using the finite element
-                  method to optimize engineering structural solutions.
+                  FEM Calcul is based in Barcelona, Catalunya. <strong>FEM</strong> is the verb <strong>TO DO</strong>{' '}
+                  in Catalan language. We like to take challenges and to get things done.
                 </>
               }
             />
@@ -79,7 +75,7 @@ export default function AboutPage() {
               icon={<Scale width={'44px'} height={'44px'} />}
               text={
                 <>
-                  We support the raising of the <strong>FEMinine</strong> leadership in the STEM field. We belief that
+                  We support the raising of the <strong>FEMinine</strong> leadership in the STEM field. We believe that
                   equal opportunities for both women and men and equal representativeness in business will lead to a
                   better world.
                 </>

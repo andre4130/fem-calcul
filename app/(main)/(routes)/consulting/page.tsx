@@ -56,8 +56,9 @@ export default function ConsultingPage() {
             </div>
             <div className="text-sm md:text-lg sm:ml-4 pt-4">
               <ul className={'list-inside'}>
-                {consultingExperience.map((experience) => (
+                {consultingExperience.map((experience, i) => (
                   <ListElement
+                    key={i}
                     icon={<Boxes width={iconSize.width} height={iconSize.height} />}
                     text={<>{experience}</>}
                   />
@@ -81,8 +82,9 @@ export default function ConsultingPage() {
             </div>
             <div className="text-sm md:text-lg sm:ml-10 pt-4">
               <ul className={'list-inside'}>
-                {consultingWorks.map((work) => (
+                {consultingWorks.map((work, i) => (
                   <ListElement
+                    key={i}
                     icon={<Briefcase width={iconSize.width} height={iconSize.height} />}
                     text={<>{work}</>}
                   />
