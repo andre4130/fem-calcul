@@ -36,8 +36,8 @@ export default function AboutPage() {
             <>
               She has worked at DIANA FEA BV, in The Netherlands, since 2016 taken different roles: kernel developer,
               documentation curator for the DIANA developments, training tutor, client support engineer and product
-              specialist. She is a DIANA Expert and, with FEM Calcul, she continues her collaborating with DIANA FEA BV
-              with the roles of product development specialist, technical editor, training tutor and costumer support.
+              specialist. She is a DIANA Expert and, with FEM Calcul, she continues her technical collaborating with
+              DIANA FEA BV.
             </>
           </SectionMainTextFormatter>
         </SectionWrapper>

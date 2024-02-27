@@ -44,9 +44,9 @@ export default function Footer() {
             <div className="footer-flex-row">
               <Phone /> <p className="pl-3">+34 611 65 00 38</p>
             </div>
-            <a href="mailto:denise.ferreira@femcalcul.com">
+            <a href="mailto:projects@femcalcul.com">
               <div className="footer-flex-row pt-2">
-                <Mail /> <p className="pl-3">denise.ferreira@femcalcul.com</p>
+                <Mail /> <p className="pl-3">projects@femcalcul.com</p>
               </div>
             </a>
           </div>
