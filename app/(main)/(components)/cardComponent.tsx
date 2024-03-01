@@ -3,6 +3,7 @@ import { Card, CardHeader, CardTitle } from '@/components/ui/card';
 
 export default function CardComponent({ title, linkTo, img }: { title: string; linkTo: string; img: { src: string } }) {
   const cardSize = { height: '280px', width: '320px' };
+
   return (
     <Link href={linkTo}>
       <Card
