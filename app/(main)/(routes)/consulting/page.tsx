@@ -67,14 +67,20 @@ export default function ConsultingPage() {
             </div>
           </div>
           <div className="hidden md:max-w-50 md:block">
-            <Image src={'/images/FEM-beam.jpg'} height={500} width={500} alt={'beam'} />
+            <Image src={'/images/FEM-beam.jpg'} height={500} width={500} alt={'consulting-1'} className="rounded-2xl" />
           </div>
         </div>
       </SectionWrapper>
       <SectionWrapper title="Consulting Works" boxClassNames="md:justify-end">
         <div className="flex w-100 justify-between">
           <div className="hidden md:block md:max-w-50">
-            <Image src={'/images/consulting-works.jpg'} height={550} width={550} alt={'beam'} />
+            <Image
+              src={'/images/consulting-works.jpg'}
+              height={550}
+              width={550}
+              alt={'consulting-2'}
+              className="rounded-2xl"
+            />
           </div>
           <div className="md:max-w-[40%]">
             <div className="text-lg md:text-2xl">

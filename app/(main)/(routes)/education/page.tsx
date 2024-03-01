@@ -56,7 +56,13 @@ export default function EducationPage() {
             </div>
           </div>
           <div className="hidden md:max-w-50 md:block">
-            <Image src={'/images/education-students.jpg'} height={600} width={600} alt={'education'} />
+            <Image
+              src={'/images/education-students.jpg'}
+              height={600}
+              width={600}
+              alt={'education'}
+              className="rounded-2xl"
+            />
           </div>
         </div>
       </SectionWrapper>

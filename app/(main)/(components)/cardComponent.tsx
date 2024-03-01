@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { Card, CardHeader, CardTitle } from '@/components/ui/card';
+
 export default function CardComponent({ title, linkTo, img }: { title: string; linkTo: string; img: { src: string } }) {
   const cardSize = { height: '280px', width: '320px' };
   return (
@@ -15,7 +16,7 @@ export default function CardComponent({ title, linkTo, img }: { title: string; l
         }}
       >
         <CardHeader>
-          <CardTitle className="p-2 bg-gray-100 opacity-90 rounded-md">{title}</CardTitle>
+          <CardTitle className="p-2 bg-gray-100 opacity-80 rounded-md">{title}</CardTitle>
         </CardHeader>
       </Card>
     </Link>
