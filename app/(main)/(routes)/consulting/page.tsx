@@ -51,7 +51,7 @@ export default function ConsultingPage() {
         <div className="flex w-100 justify-between ">
           <div className="max-w-100 md:max-w-[50%]">
             <div className="text-lg md:text-2xl">
-              FEM Calcul has decades of experience on nonlinear finite element analysis of complex structural
+              FEM Calcul has more than 10 years of experience on nonlinear finite element analysis of complex structural
               engineering problems applied to different sectors:
             </div>
             <div className="text-sm md:text-lg sm:ml-4 pt-4">

@@ -27,9 +27,9 @@ export default function TechnicalWritingPage() {
             </p>
             <br />
             <p>
-              FEM Calcul has decades of scientific and technical writing in the ambit of finite element analysis applied
-              to structural civil engineering problems. We can help your institution to correctly communicate your work
-              internally to stakeholders and externally to clients and partners.
+              FEM Calcul has more than 10 years of scientific and technical writing in the ambit of finite element
+              analysis applied to structural civil engineering problems. We can help your institution to correctly
+              communicate your work internally to stakeholders and externally to clients and partners.
             </p>
             <br />
             <p>

@@ -12,7 +12,7 @@ export default function ResearchPage() {
       <SectionBanner image={research} title="Research" style={{ backgroundPosition: 'center' }} />
       <SectionIntroText
         text={
-          'FEM Calcul is built on decades of research on computational methods applied to structural civil engineering.'
+          'FEM Calcul is built on more than 10 years of research on computational methods applied to structural civil engineering.'
         }
       />
       <SectionWrapper title={'Research with Public Funding'}>

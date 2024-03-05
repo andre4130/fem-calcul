@@ -14,9 +14,9 @@ export default function AboutPage() {
       <>
         <div className="w-100 flex justify-center pt-10">
           <p className=" max-w-2xl text-text-primary font-normal text-justify align-middle  italic text-2xl">
-            "<strong>FEM CALCUL</strong> brings together decades of experience in both academia and industry in the
-            ambit of complex nonlinear finite element analysis, to help engineers achieving accurate and efficient
-            simulations of complex structural problems."
+            "<strong>FEM CALCUL</strong> brings together more than 10 years of experience in both academia and industry
+            in the ambit of complex nonlinear finite element analysis, to help engineers achieving accurate and
+            efficient simulations of complex structural problems."
           </p>
         </div>
         <SectionWrapper title={'Academic career'}>
