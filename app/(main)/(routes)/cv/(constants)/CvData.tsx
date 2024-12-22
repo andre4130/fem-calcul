@@ -46,6 +46,15 @@ export const CvData: CvDataProps = {
   ],
   industry: [
     {
+      startDate: 'September 2024',
+      endDate: 'Present',
+      description: (
+        <>
+          <strong>Adjunct professor</strong>, Universitat Politècnica de Catalunya, Barcelona, Spain.
+        </>
+      ),
+    },
+    {
       startDate: 'October 2023',
       endDate: 'Present',
       description: (
@@ -59,7 +68,7 @@ export const CvData: CvDataProps = {
       endDate: 'Present',
       description: (
         <>
-          <strong>Product Specialist (Freelance)</strong>, DIANA FEA BV, The Netherlands.
+          <strong>FEA Specialist (Freelance)</strong>, DIANA FEA BV, The Netherlands.
         </>
       ),
     },

@@ -25,7 +25,7 @@ export default function CvPage() {
           ))}
         </>
       </SectionWrapper>
-      <SectionWrapper title="Experience in Industry">
+      <SectionWrapper title="Professional Experience">
         <>
           {CvData.industry.map((element, i) => (
             <CvInfoRow
