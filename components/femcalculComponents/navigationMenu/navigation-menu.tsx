@@ -18,7 +18,7 @@ export default function Navigation() {
             <Image src="/femlogo.svg" height={40} width={40} alt={'logo'} className=" mr-3" />
             <strong>
               <h4 className="text-primary" style={{ filter: `url(${mesh.src})` }}>
-                Fem Calcul
+                FEM Calcul
               </h4>
             </strong>
           </Link>

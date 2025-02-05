@@ -66,8 +66,8 @@ export default function AboutPage() {
               icon={<PencilRuler width={'44px'} height={'44px'} />}
               text={
                 <>
-                  FEM Calcul is based in Barcelona, Catalunya. <strong>FEM</strong> is the verb <strong>TO DO</strong>{' '}
-                  in Catalan language. We like to take challenges and to get things done.
+                  <strong>FEM</strong> is the verb <strong>TO DO</strong> in Catalan language. We like to take
+                  challenges and to get things done.
                 </>
               }
             />
