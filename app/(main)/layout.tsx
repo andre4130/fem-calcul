@@ -9,7 +9,7 @@ export default function MainLayout({ children }: { children: React.ReactNode }) 
     <div className="w-100 min-h-screen flex-column">
       <Navigation />
       <NavigationDrawer />
-      <div className="pt-[74px] min-h-[calc(100vh-100px)]">{children}</div>
+      <div className="pt-[74px] min-h-[calc(100vh-100px)] min-w-[100%]">{children}</div>
       <Footer />
     </div>
   );

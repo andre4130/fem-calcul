@@ -15,7 +15,7 @@ export default function Footer() {
             rel="noopener noreferrer"
           >
             <Linkedin />
-            <p className="pl-3">LinkedIn</p>
+            <p className="hidden md:block pl-3">LinkedIn</p>
           </a>
           <a
             className="footer-flex-row"
@@ -24,7 +24,7 @@ export default function Footer() {
             rel="noopener noreferrer"
           >
             <BookMarked />
-            <p className="pl-3">Research gate</p>
+            <p className="hidden md:block pl-3">Research gate</p>
           </a>
           <a
             target="_blank"
@@ -33,10 +33,10 @@ export default function Footer() {
             className="footer-flex-row"
           >
             <GraduationCap />
-            <p className="pl-3">Google scholar</p>
+            <p className="hidden md:block pl-3">Google scholar</p>
           </a>
         </div>
-        <div className="h-full flex items-center justify-center">
+        <div className="h-full hidden md:flex items-center justify-center">
           FEM Calcul - Structural Analysis Consulting © {currentYear}
         </div>
         <div className="h-full justify-center">

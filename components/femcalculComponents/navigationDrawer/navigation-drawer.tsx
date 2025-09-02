@@ -9,26 +9,23 @@ import { NavigationMenu, NavigationMenuList } from '@/components/ui/navigation-m
 
 export default function NavigationDrawer() {
   return (
-    <div className="md:hidden p-6 fixed flex w-full bg-[#fff] z-[1] border-b-[2px]">
+    <div className="md:hidden p-5 fixed flex w-full items-center bg-[#fff] z-[1] border-b-[2px]">
       <Sheet>
-        <SheetTrigger className="w-full">
+        <SheetTrigger className="w-full flex  text-primary-light ">
           <div className="flex flex-row w-full justify-between">
             <Menu />
             <div>
-              <p>
-                <strong>FEM Calcul</strong>
-              </p>
+              <Image src="/FEM_Calcul_Logo.png" height={40} width={80} alt={'logo'} />{' '}
             </div>
             <div></div>
           </div>
         </SheetTrigger>
-        <SheetContent>
+        <SheetContent className="right-[2%]">
           <SheetHeader>
-            <SheetTitle className="justify-center ml-[-6px]">
+            <SheetTitle className="justify-center flex ">
               <SheetClose asChild>
                 <Link href={'/'} className="flex items-center">
-                  <Image src="/femlogo.svg" height={40} width={40} alt={'logo'} className=" mr-3" />{' '}
-                  <strong>Fem Calcul</strong>
+                  <Image src="/FEM_Calcul_Logo.png" height={40} width={100} alt={'logo'} />{' '}
                 </Link>
               </SheetClose>
             </SheetTitle>
